@@ -1,8 +1,6 @@
 {
   "watch": ["server"],
-  "ext": "js,ts,json", 
-  "ignore": ["node_modules"], 
+  "ext": "ts",
   "exec": "tsx server/server.ts",
   "restartable": "rs"
-
 }

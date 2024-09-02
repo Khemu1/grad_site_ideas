@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import IDEA from "../models/idea";
-import { IdeaProps } from "../../../types";
+import { IdeaProps } from "../types";
 
 export const addIdea = async (req: Request, res: Response) => {
   try {

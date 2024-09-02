@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { IdeaProps, NewIdeaProps, returnedIdeasProps } from "../../../types";
+import { IdeaProps, NewIdeaProps, returnedIdeasProps } from "../../types";
 import {
   addIdea,
   deleteIdea,

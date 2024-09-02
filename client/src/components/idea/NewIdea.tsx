@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { marked } from "marked";
 import DOMPurify from "dompurify";
-import { EditIdeaProps, NewIdeaProps } from "../../../../types";
+import { EditIdeaProps, NewIdeaProps } from "../../../types";
 import { useAddIdea, useEditIdea } from "../../hooks";
 import {
   getEditIdeaSchema,

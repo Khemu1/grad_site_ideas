@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import { IdeaProps, NewIdeaProps } from "../../../types";
-import { getIdeSchema, validateWithSchema } from "../../../client/src/utils";
+import { IdeaProps, NewIdeaProps } from "../types";
+import { getIdeSchema, validateWithSchema } from "../../utils";
 import { ZodError } from "zod";
 import { IDEA } from "../models/idea";
 

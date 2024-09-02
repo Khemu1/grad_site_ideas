@@ -1,4 +1,6 @@
-import { DialogProps } from "../../../types";
+import React from "react";
+
+import { DialogProps } from "../../types";
 import NewIdea from "./idea/NewIdea";
 
 const DialogPanel: React.FC<DialogProps> = ({ isOpen, onClose, cardData }) => {

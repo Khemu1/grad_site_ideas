@@ -1,4 +1,4 @@
-import { NewIdeaProps } from "../../../types";
+import { NewIdeaProps } from "../../types";
 
 export const getIdea = async (_id: string) => {
   try {
