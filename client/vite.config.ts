@@ -1,12 +1,16 @@
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
+import path from "path";
+import { fileURLToPath } from "url";
 
 export default defineConfig(({ mode }) => {
-  // Load environment variables from .env file based on mode
-  const env = loadEnv(mode, process.cwd(), "");
+  // Load environment variables from .env file located one directory up
+  const __filename = fileURLToPath(import.meta.url);
+  const ___rootDir = path.dirname(__filename); // server
+
+  const env = loadEnv(mode, path.resolve(___rootDir, "../"), "");
 
   return {
-    root: "client", // Set the root to the client folder
     plugins: [react()],
     build: {
       outDir: "dist",
@@ -26,7 +30,6 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
-      //dev mode and proxy
       port: !isNaN(Number(env.VITE_FRONTEND_PORT))
         ? Number(env.VITE_FRONTEND_PORT)
         : 5414,

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { IdeaCardProps } from "../../../types";
+import { IdeaCardProps } from "../../types";
 import { marked } from "marked";
 import DOMPurify from "dompurify";
 import { useNavigate, useSearchParams } from "react-router-dom";

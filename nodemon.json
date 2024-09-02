@@ -1,6 +1,0 @@
-{
-  "watch": ["server"],
-  "ext": "ts",
-  "exec": "tsx server/server.ts",
-  "restartable": "rs"
-}

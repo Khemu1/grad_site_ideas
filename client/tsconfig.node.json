@@ -4,17 +4,19 @@
     "lib": ["ES2023"],
     "module": "ESNext",
     "skipLibCheck": true,
+
+    /* Bundler mode */
     "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": false, // Ensure this is set to false if you want to emit files
-    "outDir": "./dist/server", // Output directory for compiled JavaScript
-    "rootDir": "./server", // Root directory for your TypeScript files
+    "noEmit": true,
+
+    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["server/**/*.ts"], // Include all TypeScript files in the server directory
-  "exclude": ["node_modules"]
+  "include": ["vite.config.ts"]
 }
