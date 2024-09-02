@@ -170,7 +170,7 @@ const NewIdea: React.FC<EditIdeaProps> = ({ cardData }) => {
               </div>
             ) : success || editSuccess ? (
               <img
-                src={"/checkmark.svg"}
+                src={"/assets/checkmark.svg"}
                 width={32}
                 height={32}
                 alt="Idea Created"

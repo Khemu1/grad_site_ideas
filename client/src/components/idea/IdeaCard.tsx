@@ -88,7 +88,7 @@ const IdeaCard: React.FC<IdeaCardProps> = ({ refresh, cardData }) => {
         className="absolute z-10 top-2 right-2 w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full"
         ref={buttonRef}
       >
-        <img src="/public/options.svg" alt="Options" className="w-6 h-6" />
+        <img src="/assets/options.svg" alt="Options" className="w-6 h-6" />
       </button>
 
       <div
@@ -124,7 +124,7 @@ const IdeaCard: React.FC<IdeaCardProps> = ({ refresh, cardData }) => {
           <span className="loading loading-spinner"></span>
         ) : success ? (
           <img
-            src={"/checkmark.svg"}
+            src={"/assets/checkmark.svg"}
             width={32}
             height={32}
             alt="Idea Created"
