@@ -8,6 +8,7 @@ import Idea from "./idea/Idea";
 import Ideas from "./idea/Ideas";
 import SearchBar from "./idea/SearchBar";
 import DialogPanel from "./DialogPanel";
+import Loading from "./loading";
 
 export {
   SearchBar,
@@ -20,4 +21,5 @@ export {
   IdeaCard,
   Idea,
   DialogPanel,
+  Loading,
 };
