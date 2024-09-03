@@ -45,6 +45,7 @@ textarea:focus {
 }
 .idea-card {
   @apply flex flex-col justify-between p-4 border-b-4 rounded-lg hover:border-b-yellow-400  shadow-md bg-[#1F1E25] min-w-[300px] text-gray-100 w-full max-w-xs;
+
   transition: all 250ms ease-in-out;
 }
 .idea-card:hover {
@@ -166,4 +167,14 @@ a {
   padding: 1em;
   border-radius: 3px;
   overflow-x: auto;
+}
+
+@media (max-width: 400px) {
+  .search_bar {
+    min-width: 250px !important;
+  }
+  .idea-card {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
 }
